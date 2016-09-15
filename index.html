@@ -2,12 +2,23 @@
 <html>
     <head>
         <title>Varsha's Page</title>
-        <h1>Welcome to My Page!</h1>
+        <h1 style="color:purple"><span id="liked-item">Welcome!</span></h1>
+        <script>
+            var itemsLiked = ["Welcome!", "Vanakkam!", "Bienvenue!", "Willkommen!", "ahlan wa sahlan!", "Benvenuto!", "Karibuni!"]
+            var index = 0;
+            setInterval(function() {
+                var header = document.getElementById("liked-item");
+                index = (index + 1) % itemsLiked.length;
+                header.innerHTML = itemsLiked[index];
+            }, 3000);
+         </script>
         <div>
             <img src="lavenderfields.jpg" style="width:484px;height:328px;">
         </div>
+    </head>
+    <body background="background1.jpg">
         <div>
-            <p>Hi, I'm Varsha! Thanks for paying a visit to my website. Here are some things about me: </p>
+            <p>Hi, I'm Varsha! Thanks for paying a visit to my page. Here are some things about me: </p>
             <ul>
                 <li>I'm a sophomore at UIUC</li>
                 <li>I study computer science and statistics</li>
@@ -18,8 +29,8 @@
             </ul>
         </div>
         <div>
-            <h3>What am I interested in? Good question!</h3>
-            <p style="color:green">I'm currently really interested in the applicationssssss of tech in the music and education industries</p>
+            <h3 style="color:palevioletred">~My Interests~</h3>
+            <p>I'm currently really interested in the applications of tech in the music and education industries</p>
         </div>
-    </head>
+    </body>
 </html>
