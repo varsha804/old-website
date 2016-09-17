@@ -1,1 +1,58 @@
-adding style.css
+body,
+p {
+	color: black;
+}
+.lavenderfields, .about_paragraph {
+	//float: left;
+}
+.about_paragraph {
+	float: ;
+}
+.cloud_left, .darkcloud, .cloud_right {
+	float: left;
+	margin-left: 60px;
+	position: relative;
+	width: 250px;
+}
+/*.darkcloud, .cloud2 {
+	float: left;
+	margin-left: 80px;
+}*/
+.darkcloud h4 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 92px;
+	width: 218px;
+	color: #FFF;
+	margin: 15px;
+}
+.cloud_left {
+	margin-left: 147px;
+}
+.darkcloud {
+	margin-left: 110px;
+}
+
+.cloud_right {
+	margin-left: 110px;
+}
+.cloud_left h4 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 92px;
+	width: 218px;
+	color: #000000;
+	margin: 15px;
+}
+.cloud_right h4 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 80px;
+	width: 218px;
+	color: #000000;
+	margin: 30px;
+	text-indent: 20px;
+}
