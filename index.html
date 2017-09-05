@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <title>Varsha's Page</title>
+        <center><h1 style="color:purple"><span id="liked-item">Welcome!</span></h1></center>
+        <script>
+            var itemsLiked = ["Welcome!", "Vanakkam!", "Bienvenue!", "Willkommen!", "ahlan wa sahlan!", "Benvenuto!", "Karibuni!"]
+            var index = 0;
+            setInterval(function() {
+                var header = document.getElementById("liked-item");
+                index = (index + 1) % itemsLiked.length;
+                header.innerHTML = itemsLiked[index];
+            }, 3000);
+         </script>
+        <center><div class="lavenderfields">
+            <a href="https://www.instagram.com/varsha804/"><img src="LavenderFields.jpg" style="width:484px;height:328px;" border="5"></a>
+            <span style="font-family:garamond">
+            <p>Hi, I'm Varsha! Thanks for paying a visit to my page.</p>
+            </span>
+        </div></center>
+    </head>
+    <body style="background-color:powderblue">
+        <div class="cloud_left">
+            <a href="interests.html"><img src="cloud.png" style="width:300px;height:200px;" </a>
+            <h4><font size="3" face="courier">My Interests</font></h4>
+        </div>
+        <div class="darkcloud">
+            <a href="about_me.html"><img src="darkcloud.png" style="width:300px;height:200px;" </a>
+            <h4><font size="3" face="courier">About Me</font></h4>
+        </div>
+        <div class="cloud_right">
+            <a href="Resume_2017.pdf"><img src="cloud.png" style="width:300px;height:200px;" </a>
+            <h4><font size="3" face="courier">Resume</font></h4>
+        </div>
+    </body>
+</html>
+            
